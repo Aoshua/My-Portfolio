@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	
+	<!-- Honor Code: I acknowledge that this code represents my own work: JA GO HERE Date:  06/15/2018 -->
+	
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="Styles/MyStyles.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="Styles/print.css" media="print" />
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+
+    <title>Joshua Abbott - Home</title>
+  </head>
+  
+  <body>
+		<div id="navbar-top-space" class='navbar navbar-inverse navbar-fixed-top sticky' role='navigation'>
+			<div id="navbar-top">
+				<img id ="MySymbol" src="Images/TransparentSymbol.png" width="50" alt="Josh's Symbol" />
+				<ul>
+					<li id="active-page"><a href="JA_Website_index.html" id="Home_Link">Home</a></li>
+					<li><a href="Work_Experience.html">Work Experience</a></li>
+					<li><a href="Academic_Experience.html">Academic Experience</a></li>
+					<li><a href="Hobbies.html">Hobbies</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="cover-image">
+			<a id="About_Me_Section"></a> <!--To jump to this section from left navbar -->
+			<img src="Images/white-wallpapers.jpg" class="img-responsive" alt="Cover Image" />
+			
+		</div>
+		
+		<div class="row">
+			<aside id="navbar-left" class="col-sm-2">
+				<ul>
+					<li><a href="#About_Me_Section">About Me</a></li> <!-- The idea of providing these is that in the future these sections may be longer and I may have more images in between -->
+					<li><a href="#Goals_Section">Goals</a></li>
+					<li><a href="#Contact_Me_Section">Contact Me</a></li>
+				</ul>
+			</aside>
+			
+			<div class="col-sm-7">
+				<br>
+				<h2>About Me:</h2>
+				<a id="Goals_Section"> <!--To jump to this section from left navbar -->
+				<p>I am the kind of person who becomes passionate about whatever task 
+				lies before them. I attack problems in a methodical and timely manner, 
+				and I love the feeling of a job well done. Of the many interests that 
+				I have, technology rises to the top. I am a studying Software Engineer 
+				who hopes to help propel future innovation with AI and machine learning. 
+				I graduated with my Associates degree from Weber State University a week
+				before I graduated from high school. I served an LDS mission in Argentina
+				for two years. There, I picked up the Spanish language and learned the 
+				value of service. I am currently pursuing my Bachelor’s degree in Computer
+				Science with a minor in Math. </p>
+				<br>
+				<p>*Be sure to take a look at the other pages of my website for more
+				information about my work experience, academics, and hobbies.</p>
+				</a>
+					
+				<br>
+				
+				<h2>Goals:</h2><a id="Contact_Me_Section"></a> <!--To jump to this section from left navbar -->
+				<p>The first of my professional goals is to excel in my studies and receive 
+				my Bachelor’s degree by 2020. I plan to work as a software engineer for a 
+				renowned business, and to one day delve into the field of AI software. I hope 
+				to improve countless lives through the innovations that I contribute to.</p>
+
+				<p>I also have recreational goals. The first of those is to publish a book of my 
+				poetry. I also hope to better my skills in guitar to the point that a few friends 
+				and I can create a local band. Another goal I have is to continue my mastery of 
+				the Spanish language, and to become proficient with the Portuguese language. As 
+				part of this last goal, I hope to travel to several countries in South America, 
+				Portugal, and Spain.</p>
+				
+				<br>
+				<br>
+				<h2>Contact Me:</h2>
+				<br>
+				<div class="container">
+					<form id="Contact_Me_Form"
+						action="http://www.tipjar.com/cgi-bin/test"
+						method="post">
+
+						<label for="First_Name">First Name</label>
+						<input type="text" id="First_Name" name="First_Name" placeholder="Your first name...">
+
+						<label for="Last_Name">Last Name</label>
+						<input type="text" id="Last_Name" name="Last_Name" placeholder="Your last name...">
+
+						<label for="Contact_Reason">Why do you wish to contact me?</label>
+							<select id="Contact_Reason" name="Contact_Reason">
+								<option value="Job">Job Offer</option>
+								<option value="Qestion">Business Question</option>
+								<option value="Suggestion">Make Suggestion</option>
+							</select>
+
+						<label for="Message">Message Content</label>
+						<textarea id="Message" name="message" placeholder="Write me..." style="height:200px"></textarea>
+
+						<input type="submit" value="Submit">
+						<input type="reset" value="Clear" />
+
+					</form>					
+				</div>
+			</div>
+	
+			<div class="col-sm-3">
+				<br>
+				<br>
+				<img id="MyProfilePic1" src="Images/JoshProfilePicEdit.jpg" alt="My profile picture" />
+			</div>
+			
+		</div>
+		
+   
+	<br>
+	<br>
+	<div class="row">
+		<footer class="col-sm-12" id="validations">
+			<p> Code Validations </p>
+			
+			<!--HTML 5 validation-->
+			<a href="https://validator.w3.org/nu/?doc=http://icarus.cs.weber.edu/~ja10917/MidtermProject/JA_Website_index.html" target="blank"> 
+				<img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered" id="HTMLValidation" /> </a>
+				
+			<!--CSS3 validation-->			
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+			<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!" id="css3Validation" />
+			</a>
+			
+		</footer>
+	</div>
+	<br>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+  </body>
+  
+</html>
