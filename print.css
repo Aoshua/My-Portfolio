@@ -1,0 +1,28 @@
+/*
+  
+   Website Portfolio Style Sheet for printer
+   Author: Joshua Abbott
+   Date:   06/26/2018
+
+   Filename:         print.css
+   Supporting Files: none
+
+*/
+
+@page {size: letter portrait; margin: 1in}
+
+	#navbar-top-space {display: none;} /* Hide Navbars */
+	#navbar-left {display: none;}
+	
+	img {display: none;} /* Hide images */
+	#cover-image {display: none;}
+	
+	form {display: none;} /* Hide form */
+	
+	footer a, footer p {display: none;} /* Hide validations */
+
+
+
+
+
+
