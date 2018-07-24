@@ -7,60 +7,8 @@
 	Supporting Files: None
 */
 
-
-/* Styles for the Top Nav bar */
-	#navbar-top-space {
-		background-color: 	#404040;
-		padding: 10px; /* 2px 5px 0px 5px; */
-	}
-
-	#navbar-top li {
-		display: inline;
-		font-size: 130%;
-		padding: 25px;
-
-	}
-	#active-page {
-		background-color: black;
-	}
-	#navbar-top a {
-		color: white;
-		text-decoration: none;
-	}
-	#navbar-top a:hover {
-		color: #99ffcc;
-		text-decoration: none;
-	}
-	
-	
-/* Styles for the Page Nav bar (side) */
-	aside {
-		background-color: #606060;
-		color: black;
-		font-size: 110%;
-
-		border-radius: 0px 10px 10px 10px;
-	}
-	aside li {
-		display: block;
-		padding: 10px;
-	}
-	aside a{
-		color: white;
-		text-decoration: none;
-	}
-	aside a:hover {
-		color: #99ffcc;
-		text-decoration: none;
-	}
-	aside a:active {
-		color: #00e673;
-		text-decoration: none;
-	}
-	
-	
 /* Styles for the Page Body */
-	h1, h2, p, a, li {
+	h1, h2, p, a {
 		font-family: "Times New Roman", Times, serif;
 	}
 	h1 {
@@ -73,6 +21,7 @@
 		font-family: sans;
 		font-size: 120%;
 	}
+	
 	#About_Me_Section {color: black; }
 	#Goals_Section {color: black;}
 	#Contact_Me_Section {color: black;}
@@ -87,18 +36,15 @@
 		list-style-type: circle;
 	}
 	
-	
 /* Styles for the Images */
 	#MyProfilePic1 {
 			max-width: 75%;
-		}
+	}
 	#Job_Images img {
 		display: block;
 		padding: 15px;
 		width: 90%;
-		
 	}
-	
 	#WSU_Rock {
 		width: 45%;
 		display: inline;
@@ -120,7 +66,7 @@
 		width: 90%;
 	}
 	#MySymbol {
-		position: fixed;
+		float: left;
 		padding-right: 10px;
 	}
 	
@@ -198,7 +144,58 @@
 	#Contact_Me_Form label {
 		color: white;
 	}
+	
+/* Styles for the Top Nav bar */
+	#navbar-top-space {
+		background-color: 	#404040;
+		padding: 10px 10px 3px 10px; /* 2px 5px 0px 5px; */
+	}
+	#navbar-top li {
+		display: inline;
+		font-family: "Courier New", Courier, monospace;
+		font-size: 130%;
+		padding: 25px;
+	}
+	#active-page {
+		background-color: black;
+		border-radius: 10px;
+	}
+	#navbar-top a {
+		color: white;
+		text-align: center;
+		text-decoration: none;
+	}
+	#navbar-top a:hover {
+		color: #99ffcc;
+		text-decoration: none;
+	}
+	
+/* Styles for the left Nav bar */
 
+	aside img {
+		display: block;
+		width: 30%;
+		padding: 20px 0px 10px 10px;
+	}
+	#github_icon{
+		padding-bottom: 20px;
+	}
+	/* aside li {
+		display: block;
+		padding: 10px;
+	}
+	aside a{
+		color: white;
+		text-decoration: none;
+	}
+	aside a:hover {
+		color: #99ffcc;
+		text-decoration: none;
+	}
+	aside a:active {
+		color: #00e673;
+		text-decoration: none;
+	} */
 	
 /* Styles for the Footer */		
 	footer {
