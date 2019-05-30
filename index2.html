@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="jcode.js"></script>
+    <script src="jscript.js"></script>
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -28,17 +29,17 @@
   </head>
 
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-dark">
-      <a class="navbar-brand j-navbar" href="index2.html"><img id ="MySymbol" src="images/TransparentSymbol.png" width="35" alt="Josh's Symbol" /></a>
+    <nav class="navbar fixed-top navbar-light bg-dark">
+      <a class="navbar-brand j-navbar" href="index2.html"><img id ="MySymbol" src="images/TransparentSymbol.png" alt="Josh's Symbol" /></a>
       <div><h3 class="name">Joshua Abbott</h3></div>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/josh.abbott.39501" target="blank">
-					<img id="facebook_icon" src="images/if_Facebook.png" alt="Facebook Link"/></a>
-				<a href="https://www.linkedin.com/in/joshua-michael-abbott64" target="blank">
-					<img id="linkedin_icon" src="images/if_linkedin.png" alt="Facebook Link"/></a>
-				<a href="https://github.com/Aoshua" target="blank">
-					<img id="github_icon" src="images/if_github.png" alt="Facebook Link"/></a>
-      </div>
+      <ul class="nav-ul">
+        <a class="social-icons" href="https://www.facebook.com/josh.abbott.39501" target="blank">
+          <img id="facebook_icon" src="images/if_Facebook.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
+				<a class="social-icons" href="https://www.linkedin.com/in/joshua-michael-abbott64" target="blank">
+					<img id="linkedin_icon" src="images/if_linkedin.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
+				<a class="social-icons" href="https://github.com/Aoshua" target="blank">
+					<img id="github_icon" src="images/if_github.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
+      </ul>
     </nav>
 
     <div class="row card-row" >

@@ -7,43 +7,59 @@
 	Supporting Files: 
 */
 
-/* Styles for the 3 primary cards */
+/* Navbar */
+    .nav-ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }      
+    .nav-ul li {
+        float: left;
+    }      
+    .nav-ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+/* Three primary cards */
     .card:hover{
         background-color: lightsteelblue;
         border: 3px solid lightsteelblue;
     }
-
     .viewer:hover{
         cursor: pointer;
     }
-
     .card-row {
         justify-content: space-around;
         padding: 90px calc(5%) 75px calc(5%);
         background-image: url(images/white_design.png);
-        /* Free use image from http://www.sclance.com/pngs/white-design-png/view-page-2.htm */
+        /* Free-use image from http://www.sclance.com/pngs/white-design-png/view-page-2.htm */
     }
-
     .card-sides {
         padding-top: 35px;
     }
-
     .card-middle {
         padding: 80px 10px 0px 10px;    
     }
-
     .card-images {
         max-height: 100%;
         max-width: 100%;
     }
 
 /* Images and Icons */
-    .social-icons img{
-        float: right;
-        max-height: 35px;
+    .social-icons img {        
+        max-height: 40px;
+        max-width: 40px;
+        margin-left:20px;
+    }
+    #MySymbol{
         max-width: 35px;
-    }    
-
+    }
+    
 /* Misc */
     .name {
         color: whitesmoke;
