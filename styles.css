@@ -1,0 +1,50 @@
+/*
+	Josh's Portfolio Styles Sheet
+	Author: Joshua Abbott
+	Date: 05/29/2019
+
+	Filename: styles.css
+	Supporting Files: 
+*/
+
+/* Styles for the 3 primary cards */
+    .card:hover{
+        background-color: lightsteelblue;
+        border: 3px solid lightsteelblue;
+    }
+
+    .viewer:hover{
+        cursor: pointer;
+    }
+
+    .card-row {
+        justify-content: space-around;
+        padding: 90px calc(5%) 75px calc(5%);
+        background-image: url(images/white_design.png);
+        /* Free use image from http://www.sclance.com/pngs/white-design-png/view-page-2.htm */
+    }
+
+    .card-sides {
+        padding-top: 35px;
+    }
+
+    .card-middle {
+        padding: 80px 10px 0px 10px;    
+    }
+
+    .card-images {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+/* Images and Icons */
+    .social-icons img{
+        float: right;
+        max-height: 35px;
+        max-width: 35px;
+    }    
+
+/* Misc */
+    .name {
+        color: whitesmoke;
+    }    
