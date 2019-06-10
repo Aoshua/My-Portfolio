@@ -35,15 +35,17 @@
     }
     .card-row {
         justify-content: space-around;
-        padding: 90px calc(5%) 75px calc(5%);
+        padding: 115px calc(5%) 115px calc(5%);
+        margin: 15px;
         background-image: url(images/white_design.png);
         /* Free-use image from http://www.sclance.com/pngs/white-design-png/view-page-2.htm */
     }
     .card-sides {
         padding-top: 35px;
+        padding-bottom: 15px;
     }
     .card-middle {
-        padding: 80px 10px 0px 10px;    
+        padding: 80px 10px 15px 10px;    
     }
     .card-images {
         max-height: 100%;
@@ -59,8 +61,24 @@
     #MySymbol{
         max-width: 35px;
     }
+
+/* About Me */
+    .container-fluid{
+        padding-top: 25px;
+    }
     
 /* Misc */
     .name {
         color: whitesmoke;
-    }    
+    }  
+    
+/* Adjustments for mobile */
+@media (max-width: 768px){
+
+    .card-row {
+        padding: 80px calc(5%) 80px calc(5%);
+    }
+    .card-sides{
+        padding-top: 15px;
+    }
+}
