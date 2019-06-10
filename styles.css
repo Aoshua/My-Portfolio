@@ -8,25 +8,22 @@
 */
 
 /* Navbar */
-    .nav-ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }      
+    .navbar{
+        opacity: 0.95;
+    }
+    .nav-ul{
+        /* margin-right: auto; */
+        margin-left: auto;
+    }
     .nav-ul li {
-        float: left;
-    }      
-    .nav-ul li a {
-        display: block;
-        color: white;
+        display: inline;
         text-align: center;
-        padding: 14px 16px;
+        padding: 4px 10px;
         text-decoration: none;
     }
 
 /* Three primary cards */
-    .card:hover{
+    .card-primary:hover{
         background-color: lightsteelblue;
         border: 3px solid lightsteelblue;
     }
@@ -36,8 +33,7 @@
     .card-row {
         justify-content: space-around;
         padding: 115px calc(5%) 115px calc(5%);
-        margin: 15px;
-        background-image: url(images/white_design.png);
+        background-image: url(images/white_design.png);        
         /* Free-use image from http://www.sclance.com/pngs/white-design-png/view-page-2.htm */
     }
     .card-sides {
@@ -45,7 +41,8 @@
         padding-bottom: 15px;
     }
     .card-middle {
-        padding: 80px 10px 15px 10px;    
+        padding: 80px 10px 15px 10px;
+        
     }
     .card-images {
         max-height: 100%;
@@ -61,17 +58,53 @@
     #MySymbol{
         max-width: 35px;
     }
+    #cardWeberSeal{
+        max-width: 50%;
+        padding-top: 8px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 /* About Me */
     .container-fluid{
         padding-top: 25px;
+    }    
+
+/* Work Experience */
+    .time-worked{
+        display: block;
+        float: right;
     }
-    
+    .work-card{
+        margin-bottom: 15px !important;
+        min-height: 100%;
+    } 
+
 /* Misc */
     .name {
         color: whitesmoke;
-    }  
-    
+    }
+    .page-sizer{
+        height: 100vh;
+    } 
+    h3 {
+        font-size: 1.5em; 
+    }
+    .list-header {
+        font-size: 0.95em;
+    }
+    ol li{
+        list-style-type: none;
+        margin-left: -30px;
+    }
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -50px;
+        visibility: hidden;
+    }
+        
 /* Adjustments for mobile */
 @media (max-width: 768px){
 
@@ -80,5 +113,11 @@
     }
     .card-sides{
         padding-top: 15px;
+    }
+}
+/* Paging hiccup correction */
+@media (max-width: 992px){
+    .page-sizer{
+        height: auto;
     }
 }

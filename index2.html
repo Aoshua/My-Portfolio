@@ -34,28 +34,38 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-light bg-dark">
-      <a class="navbar-brand j-navbar" href="index2.html"><img id ="MySymbol" src="images/TransparentSymbol.png" alt="Josh's Symbol" /></a>
-      <div><h3 class="name">Joshua Abbott</h3></div>
-      <ul class="nav-ul">
-        <a class="social-icons" href="https://www.facebook.com/josh.abbott.39501" target="blank">
-          <img id="facebook_icon" src="images/if_Facebook.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
-				<a class="social-icons" href="https://www.linkedin.com/in/joshua-michael-abbott64" target="blank">
-					<img id="linkedin_icon" src="images/if_linkedin.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
-				<a class="social-icons" href="https://github.com/Aoshua" target="blank">
-					<img id="github_icon" src="images/if_github.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
-      </ul>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-dark">
+      <a class="navbar-brand" href="index2.html"><img id ="MySymbol" src="images/TransparentSymbol.png" alt="Josh's Logo" /></a>
+      <div><h2 class="name">Joshua Abbott</h2></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-justified nav-ul">
+          <li class="nav-item">
+            <a class="social-icons" href="https://www.facebook.com/josh.abbott.39501" target="blank">
+              <img id="facebook_icon" src="images/if_Facebook.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
+          </li>
+          <li class="nav-item">
+            <a class="social-icons" href="https://www.linkedin.com/in/joshua-michael-abbott64" target="blank">
+              <img id="linkedin_icon" src="images/if_linkedin.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
+          </li>
+          <li class="nav-item">
+            <a class="social-icons" href="https://github.com/Aoshua" target="blank">
+              <img id="github_icon" src="images/if_github.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Cards -->
-    <div class="row card-row" >
+    <div class="row card-row page-sizer" >
       <div class="col-lg-3 col-md-12 card-sides">
-        <div class="card">
-          <div class="view">
-            <img class="card-images" src="images/novotx.jpg" class="card-img-top"
+        <div class="card card-primary">
+          <div class="view">            
+            <a href="#work_xp_link">
+              <img class="card-images" src="images/novotx.jpg" class="card-img-top"
               alt="photo">
-            <a href="#">
-              <div class="mask rgba-white-slight"></div>
             </a>
           </div>
           <div class="card-body">
@@ -65,9 +75,9 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-12 middle-card">
-        <div class="card">
+        <div class="card card-primary">
           <div class="view">            
-            <a href="https://github.com/novotx" target="_blank">
+            <a href="#about_me_link">
               <img src="images/Profile_JA.jpg" class="card-img-top"
               alt="Profile Picture">
             </a>
@@ -78,13 +88,12 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-12 card-sides">
-        <div class="card">
-          <div class="view">
-            <img class="card-images" src="/images/WSU_Rock.jpg" class="card-img-top" 
+      <div class="col-lg-3 col-md-push-12 card-sides">
+        <div class="card card-primary">
+          <div class="view">            
+            <a href="#academic_xp_link">
+              <img id="cardWeberSeal" class="card-images" src="/images/Weber_State_University_seal.png" class="card-img-top" 
               alt="photo">
-            <a href="#">
-              <div class="mask rgba-white-slight"></div>
             </a>
           </div>
           <div class="card-body">
@@ -96,44 +105,173 @@
     </div>
 
     <!-- About Me -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-md-1"></div>
-        <div class="col-12 col-md-6">
-          <h2>About Me:</h2>
-          <p>&emsp;&emsp;I am the kind of person who is passionate about whatever task lies
-              before him. I attack problems in a methodical and timely manner, and
-              I love the feeling of a job well done. Of the many interests that I
-              have, technology rises to the top. I am studying Software Development
-              in hopes to help propel future innovation in artificial intelligence
-              and machine learning. I graduated with my Associates degree from
-              Weber State University a week before I graduated from high school. I
-              served an LDS mission in Argentina for two years, where I became
-              fluent in Spanish and learned the value of service. I am currently
-              pursuing my Bachelor’s degree in Computer Science with a minor in Math.</p>
-              <p id="note">*Be sure to take a look at the other pages of my website for more
-              information about my work experience, academic experience, and hobbies.</p>
-      
-              <h3>Goals:</h3>
+    <a class="anchor" id="about_me_link"></a>
+    <div class="container-fluid page-sizer">
+      <h1>About Me</h1>
+      <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col-sm-3" style="padding: 10px 0px 10px 0px">
+                <img src="images/tracey_hall.jpg" class="card-images" alt="CHANGE">
+                <!-- Free-use image from https://www.pexels.com/photo/gray-laptop-computer-showing-html-codes-in-shallow-focus-photography-160107/ -->
+
+            </div>
+            <div class="col-sm-9">
+              <h3>Bio:</h3>
+              <p>&emsp;&emsp;I am passionate about whatever task lies
+                before me, and I attack problems in a methodical and timely manner.
+                  I love the feeling of a job well done. Of the many interests that I
+                have, technology rises to the top. I am studying Software Development
+                in hopes to help propel future innovation in artificial intelligence
+                and machine learning. I graduated with my Associates degree from
+                Weber State University a week before I graduated from high school. I
+                served an LDS mission in Argentina for two years, where I became
+                fluent in Spanish and learned the value of service. I am currently
+                pursuing my Bachelor’s degree in Computer Science with a minor in Math.</p>
+              <p id="note">*Be sure to take a look at the other sections of my website for more
+                information about my work and academic experience. Also, the links in the navbar 
+                will take you to my social media accounts and my GitHub repositories.</p>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <h3>Professional Goals:</h3>
               <p>&emsp;&emsp;The first of my professional goals is to excel in my studies and
-              receive my Bachelor’s degree by 2020. I plan to work as a software
-              engineer for a renowned business, and to one day delve into the field
-              of AI software. I hope work alongside a strong team of software
-              developers to greatly improve the lives of those who use our software. </p>
-      
-              <p>&emsp;&emsp;I also have recreational goals. The first of those is to publish a
-              book of my poetry. I also hope to better my guitar skills to start a
-              local band with a couple friends. Another goal I have is to continue
-              my mastery of the Spanish language, and to become proficient in
-              Portuguese. As part of this last goal, I hope to travel to several
-              countries in South America, Portugal, and Spain. </p>
+                  receive my Bachelor’s degree by 2020. I plan to work as a software
+                  engineer for a renowned business, and to one day delve into the field
+                  of AI software. I hope work alongside a strong team of software
+                  developers to greatly improve the lives of those who use our software.</p>
+              </div>
+              <div class="col-sm" style="padding-bottom: 10px">
+                <img src="images/laptop_css.jpeg" class="card-images" alt="Laptop with code">
+              </div>
+              <div class="col-sm">
+                <h3>Personal Goals:</h3>
+                <p>&emsp;&emsp;I also have recreational goals. The first of those is to publish a
+                  book of my poetry. I also hope to better my guitar skills to start a
+                  local band with a couple friends. Another goal I have is to continue
+                  my mastery of the Spanish language, and to become proficient in
+                  Portuguese. As part of this last goal, I hope to travel to several
+                  countries in South America, Portugal, and Spain.</p> 
+              </div>
+          </div>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-4">
           <img class="card-images" src="images/Profile_JA.jpg" alt="Profile Picture">
-        </div>
-        <div class="col-12 col-md-1"></div>
+        </div>        
       </div>
     </div>
+
+    <!-- Work Experience -->
+    <a class="anchor" id="work_xp_link"></a>
+    <div class="container-fluid page-sizer">
+      <h1>Work Experience</h1>
+      <br>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card work-card">
+            <div class="card-body">
+                <h4 class="card-title">Novotx</h4>
+                <p class="card-text">Novotx is a small company that own ElementsXS: an ultra flexible software for 
+                  utilities and government. Each day at Novotx I learn something new about programming and web development. 
+                  Because ElementsXS is built on ASP.NET webforms, I have learned a great deal about <b>HTML</b>, <b>CSS</b>, 
+                  <b>Javascript</b>, <b>Visual Basic</b>, and <b>C#</b>. Switching between the user interface and the back-end code keeps each day fresh. It 
+                  is very fulfilling to see the software development life-cycle from start to finish, here at Novotx. </p>
+                  <p class="time-worked">(April 2019 to Present)</p>
+              </div>
+            <div class="view">
+              <img class="card-images" src="/images/elementsXS.jpg" class="card-img-top" 
+                alt="photo">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>            
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card work-card">
+            <div class="card-body">
+                <h4 class="card-title">Writing Center</h4>
+                <p class="card-text">As a writing tutor at Weber State University, it was my responsibility, 
+                  and pleasure, to help these students gain a better understanding of the writing process through 
+                  one-on-one teaching. This is a job that I thoroughly enjoyed because I was able to help others 
+                  learn new skills in research, organization, collaboration, and debate. Students entered tutoring 
+                  sessions with questions and concerns about their writing projects. However, by the end of a session, 
+                  the students’ questions are resolved, and they leave with a greater sense of what to do next in 
+                  their projects. Along with my colleagues, I issued in a new chapter for the Writing Center through 
+                  the implementation of <b>digital rhetoric</b> by teaching students to create editorials and documentaries 
+                  via Adobe produces such as <b>InDesign</b>, <b>PremierePro</b>, and <b>Spark</b>. During my time at the 
+                  Writing Center, I maintained a system using <b>Google Forms</b> and <b>Google Sheets</b> to track and 
+                  congratulate my coworkers for their efforts and achievements. </p>
+                  <p class="time-worked">(November 2017 to April 2019)</p>
+            </div>
+            <div class="view">
+              <img class="card-images" src="/images/writing_center_room.jpg" class="card-img-top" 
+                alt="photo">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>            
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card work-card">
+            <div class="card-body">
+                <h4 class="card-title">Skills</h4>
+                <!-- <p class="card-text">For more information about my academic accomplishments, select this card.</p> -->
+                <div class="row">
+                  <div class="col-4" >
+                    <h4 class="list-header">Programming Languages:</h4>
+                    <ol>
+                      <li>C++</li>
+                      <li>C#</li>
+                      <li>Java</li>
+                      <li>Javascript</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>MIPS</li>                      
+                    </ol>
+                  </div>
+                  <div class="col-4" >
+                    <h4 class="list-header">Tech Skills:</h4>
+                    <ol>
+                      <li>Visual Studio</li>
+                      <li>IntelliJ</li>
+                      <li>Atom</li>
+                      <li>Adobe Photoshop & Lightroom</li>
+                      <li>Adobe InDesign & PremierePro</li>
+                      <li>Word Processors</li>
+                    </ol>
+                  </div>
+                  <div class="col-4" >
+                    <h4 class="list-header">Qualities:</h4>
+                    <ol>
+                      <li>Self-Motived</li>
+                      <li>Team Worker</li>
+                      <li>Detail-Oriented</li>
+                      <li>Patient</li>
+                      <li>Teachable</li>
+                      <li>Honest</li>
+                      <li>Organized</li>
+                    </ol>
+                  </div>
+                  <p>*Fluent in Spanish, proficient in Portuguese</p>
+                </div>
+            </div>
+            <div class="view" style="margin-top: -30px;">
+              <img class="card-images" src="/images/temp_skills.png" class="card-img-top" 
+                alt="photo">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Academic Experience -->
+    <a class="anchor" id="academic_xp_link"></a>
 
 
 	<!-- Latest compiled and minified JavaScript -->
