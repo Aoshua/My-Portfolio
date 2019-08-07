@@ -48,6 +48,10 @@
         max-height: 100%;
         max-width: 100%;
     }
+    .card {
+        border: none;
+        border-radius: 0px;        
+    }
 
 /* Images and Icons */
     .social-icons img {        
