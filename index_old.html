@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<!-- Honor Code: I acknowledge that this code represents my own work: Joshua Abbott Date:  06/15/2018 -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="MyStyles.css" media="screen" />
+	  <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+
+    <!-- javaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="jcode.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Joshua Abbott - Home</title>
+  </head>
+
+  <body>
+		<div id="navbar-top-space" class='navbar navbar-inverse navbar-fixed-top sticky' role='navigation'>
+			<div id="navbar-top">
+				<img id ="MySymbol" src="images/TransparentSymbol.png" width="50" alt="Josh's Symbol" />
+				<ul>
+					<li id="active-page"><a href="JA_Website_index.html" id="Home_Link">Home</a></li>
+					<li><a href="Work_Experience.html">Work Experience</a></li>
+					<li><a href="Academic_Experience.html">Academic Experience</a></li>
+					<li><a href="Hobbies.html">Hobbies</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="cover-image">
+			<a id="About_Me_Section"></a> <!--To jump to this section from left navbar -->
+			<img src="images/white-wallpapers2.jpg" class="img-responsive" alt="Cover Image" />
+			<!-- Image taken from https://stmed.net/wallpaper-28285 -->
+
+		</div>
+
+		<div class="row">
+			<aside id="navbar-left" class="col-sm-2">
+				<a href="https://www.facebook.com/josh.abbott.39501" target="blank">
+					<img id="facebook_icon" src="images/if_Facebook.png" alt="Facebook Link"/></a>
+				<a href="https://www.linkedin.com/in/joshua-michael-abbott64" target="blank">
+					<img id="linkedin_icon" src="images/if_linkedin.png" alt="Facebook Link"/></a>
+				<a href="https://github.com/Aoshua" target="blank">
+					<img id="github_icon" src="images/if_github.png" alt="Facebook Link"/></a>
+			</aside>
+
+			<div class="col-sm-7">
+				<br>
+				<h2>About Me:</h2>
+				<p>I am the kind of person who is passionate about whatever task lies
+				before him. I attack problems in a methodical and timely manner, and
+				I love the feeling of a job well done. Of the many interests that I
+				have, technology rises to the top. I am studying Software Development
+				in hopes to help propel future innovation in artificial intelligence
+				and machine learning. I graduated with my Associates degree from
+				Weber State University a week before I graduated from high school. I
+				served an LDS mission in Argentina for two years, where I became
+				fluent in Spanish and learned the value of service. I am currently
+				pursuing my Bachelor’s degree in Computer Science with a minor in Math.</p>
+				<br>
+				<p id="note">*Be sure to take a look at the other pages of my website for more
+				information about my work experience, academic experience, and hobbies.</p>
+
+				<br>
+
+				<h2>Goals:</h2>
+				<p>The first of my professional goals is to excel in my studies and
+				receive my Bachelor’s degree by 2020. I plan to work as a software
+				engineer for a renowned business, and to one day delve into the field
+				of AI software. I hope work alongside a strong team of software
+				developers to greatly improve the lives of those who use our software. </p>
+
+				<p>I also have recreational goals. The first of those is to publish a
+				book of my poetry. I also hope to better my guitar skills to start a
+				local band with a couple friends. Another goal I have is to continue
+				my mastery of the Spanish language, and to become proficient in
+				Portuguese. As part of this last goal, I hope to travel to several
+				countries in South America, Portugal, and Spain. </p>
+
+				<br>
+				<br>
+				<h2>Contact Me:</h2>
+				<br>
+				<div class="container">
+					<form id="Contact_Me_Form"
+						action="process.asp"
+						method="post">
+
+						<label for="First_Name">First Name</label>
+						<input type="text" id="First_Name" name="fName" placeholder="Your first name..." value="" onchange="addToBar()">
+
+						<label for="Last_Name">Last Name</label>
+						<input type="text" id="Last_Name" name="lName" placeholder="Your last name..." onchange="addToBar()">
+
+						<label for="Contact_Reason">Reason for contact</label>
+							<select id="Contact_Reason" name="contactReason" onchange="addToBar()">
+								<option value="Job">Job Offer</option>
+								<option value="Qestion">Business Question</option>
+								<option value="Suggestion">Make Suggestion</option>
+							</select>
+						<br>
+						<label for="Message">Message Content</label>
+						<textarea id="Message" name="message" placeholder="Write me..." style="height:200px" onchange="addToBar()"></textarea>
+
+						<div id="Progressbar1"></div>
+						<br>
+						<input id="Btn_Submit" type="submit" value="Submit"/>
+						<input id="Btn_Reset" type="reset" value="Clear" />
+
+					</form>
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<br>
+				<br>
+				<img id="MyProfilePic1" src="images/JoshProfilePicEdit.jpg" alt="My profile picture" />
+			</div>
+
+		</div>
+
+    <!--dialog boxes -->
+    <div id="dialog1" title="Info:">
+	  	<p>This is a pictures of me in 2018.</p>
+	  </div>
+
+
+	<br>
+	<br>
+	<div class="row">
+		<footer class="col-sm-12" id="validations">
+			<p> Code Validations </p>
+
+			<!--HTML 5 validation-->
+			<a href="https://validator.w3.org/nu/?doc=https://www.joshua-abbott.me/index.html" target="blank">
+				<img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered" id="HTMLValidation" /> </a>
+
+			<!--CSS3 validation-->
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+			<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!" id="css3Validation" />
+			</a>
+
+		</footer>
+	</div>
+	<br>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

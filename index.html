@@ -8,157 +8,274 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="MyStyles.css" media="screen" />
-	  <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- javaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="jcode.js"></script>
+    <!-- <script src="jcode.js"></script> -->
+    <script src="jscript.js"></script>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <title>Joshua Abbott - Home</title>
+    <!-- JQuery -->
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <!-- Misc -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon_io/favicon.ico"/> <!-- https://favicon.io/favicon-generator/ -->
+    <title>Joshua Abbott</title>
   </head>
 
   <body>
-		<div id="navbar-top-space" class='navbar navbar-inverse navbar-fixed-top sticky' role='navigation'>
-			<div id="navbar-top">
-				<img id ="MySymbol" src="images/TransparentSymbol.png" width="50" alt="Josh's Symbol" />
-				<ul>
-					<li id="active-page"><a href="JA_Website_index.html" id="Home_Link">Home</a></li>
-					<li><a href="Work_Experience.html">Work Experience</a></li>
-					<li><a href="Academic_Experience.html">Academic Experience</a></li>
-					<li><a href="Hobbies.html">Hobbies</a></li>
-				</ul>
-			</div>
-		</div>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-dark">
+      <a class="navbar-brand" href="index2.html"><img id ="MySymbol" src="images/Logos-For-Josh_Logo-1-White.png" alt="Josh's Logo" /></a>
+      <div><h2 class="name">Joshua Abbott</h2></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-justified nav-ul">
+          <li class="nav-item">
+            <a class="social-icons" href="https://www.facebook.com/josh.abbott.39501" target="blank">
+              <img id="facebook_icon" src="images/if_Facebook.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
+          </li>
+          <li class="nav-item">
+            <a class="social-icons" href="https://www.linkedin.com/in/joshua-michael-abbott64" target="blank">
+              <img id="linkedin_icon" src="images/if_linkedin.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
+          </li>
+          <li class="nav-item">
+            <a class="social-icons" href="https://github.com/Aoshua" target="blank">
+              <img id="github_icon" src="images/if_github.png" alt="Facebook Link" onmouseover="hover(this)" onmouseout="unhover(this)"/></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-		<div id="cover-image">
-			<a id="About_Me_Section"></a> <!--To jump to this section from left navbar -->
-			<img src="images/white-wallpapers2.jpg" class="img-responsive" alt="Cover Image" />
-			<!-- Image taken from https://stmed.net/wallpaper-28285 -->
+    <!-- Primary Cards -->
+    <div class="row card-row page-sizer" >
+      <div class="col-lg-3 col-md-12 card-sides">
+        <div class="card shadow card-primary">
+          <div class="view">            
+            <a href="#work_xp_link">
+              <img class="card-images" src="images/novotx.jpg" class="card-img-top"
+              alt="photo">
+            </a>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Work Experience</h4>
+            <p class="card-text">Selecting this card will take you to a section outlining my experience in the workfield.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-12 middle-card">
+        <div class="card shadow card-primary">
+          <div class="view">            
+            <a href="#about_me_link">
+              <img src="images/Profile_JA.jpg" class="card-img-top"
+              alt="Profile Picture" style="border-radius: 0px;">
+            </a>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">About Me</h4>
+            <p class="card-text">Select this card to read a short bio which briefly introduces me along with my goals and aspirations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-push-12 card-sides">
+        <div class="card shadow card-primary">
+          <div class="view">            
+            <a href="#academic_xp_link">
+              <img id="cardWeberSeal" class="card-images" src="/images/Weber_State_University_seal.png" class="card-img-top" 
+              alt="photo">
+            </a>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Academic Experience</h4>
+            <p class="card-text">For more information about my academic accomplishments, select this card.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		</div>
+    <!-- About Me -->
+    <a class="anchor" id="about_me_link"></a>
+    <div class="container-fluid page-sizer">
+      <h1>About Me</h1>
+      <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col-sm-3" style="padding: 10px 0px 10px 0px">
+                <img src="images/tracey_hall.jpg" class="card-images" alt="CHANGE">
+                <!-- Free-use image from https://www.pexels.com/photo/gray-laptop-computer-showing-html-codes-in-shallow-focus-photography-160107/ -->
 
-		<div class="row">
-			<aside id="navbar-left" class="col-sm-2">
-				<a href="https://www.facebook.com/josh.abbott.39501" target="blank">
-					<img id="facebook_icon" src="images/if_Facebook.png" alt="Facebook Link"/></a>
-				<a href="https://www.linkedin.com/in/joshua-michael-abbott64" target="blank">
-					<img id="linkedin_icon" src="images/if_linkedin.png" alt="Facebook Link"/></a>
-				<a href="https://github.com/Aoshua" target="blank">
-					<img id="github_icon" src="images/if_github.png" alt="Facebook Link"/></a>
-			</aside>
+            </div>
+            <div class="col-sm-9">
+              <h3>Bio:</h3>
+              <p>&emsp;&emsp;I am passionate about whatever task lies
+                before me, and I attack problems in a methodical and timely manner.
+                  I love the feeling of a job well done. Of the many interests that I
+                have, technology rises to the top. I am studying Software Development
+                in hopes to help propel future innovation in artificial intelligence
+                and machine learning. I graduated with my Associates degree from
+                Weber State University a week before I graduated from high school. I
+                served an LDS mission in Argentina for two years, where I became
+                fluent in Spanish and learned the value of service. I am currently
+                pursuing my Bachelor’s degree in Computer Science with a minor in Math.</p>
+              <p id="note">*Be sure to take a look at the other sections of my website for more
+                information about my work and academic experience. Also, the links in the navbar 
+                will take you to my social media accounts and my GitHub repositories.</p>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <h3>Professional Goals:</h3>
+              <p>&emsp;&emsp;The first of my professional goals is to excel in my studies and
+                  receive my Bachelor’s degree by 2020. I plan to work as a software
+                  engineer for a renowned business, and to one day delve into the field
+                  of AI software. I hope work alongside a strong team of software
+                  developers to greatly improve the lives of those who use our software.</p>
+              </div>
+              <div class="col-sm" style="padding-bottom: 10px">
+                <img src="images/laptop_css.jpeg" class="card-images" alt="Laptop with code">
+              </div>
+              <div class="col-sm">
+                <h3>Personal Goals:</h3>
+                <p>&emsp;&emsp;I also have recreational goals. The first of those is to publish a
+                  book of my poetry. I also hope to better my guitar skills to start a
+                  local band with a couple friends. Another goal I have is to continue
+                  my mastery of the Spanish language, and to become proficient in
+                  Portuguese. As part of this last goal, I hope to travel to several
+                  countries in South America, Portugal, and Spain.</p> 
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <img class="card-images" src="images/Profile_JA.jpg" alt="Profile Picture">
+        </div>        
+      </div>
+    </div>
 
-			<div class="col-sm-7">
-				<br>
-				<h2>About Me:</h2>
-				<p>I am the kind of person who is passionate about whatever task lies
-				before him. I attack problems in a methodical and timely manner, and
-				I love the feeling of a job well done. Of the many interests that I
-				have, technology rises to the top. I am studying Software Development
-				in hopes to help propel future innovation in artificial intelligence
-				and machine learning. I graduated with my Associates degree from
-				Weber State University a week before I graduated from high school. I
-				served an LDS mission in Argentina for two years, where I became
-				fluent in Spanish and learned the value of service. I am currently
-				pursuing my Bachelor’s degree in Computer Science with a minor in Math.</p>
-				<br>
-				<p id="note">*Be sure to take a look at the other pages of my website for more
-				information about my work experience, academic experience, and hobbies.</p>
+    <!-- Work Experience -->
+    <a class="anchor" id="work_xp_link"></a>
+    <div class="container-fluid page-sizer">
+      <h1>Work Experience</h1>
+      <br>
+      <div class="row">
+        <div class="col-12 col-md-4" style="margin-bottom: 10px;">
+          <div class="card shadow work-card">
+            <div class="card-body">
+                <h4 class="card-title">Novotx</h4>
+                <p class="card-text">Novotx is a small company that owns ElementsXS: an ultra flexible software for 
+                  utilities and government. Each day at Novotx I learn something new about programming and web development. 
+                  Because ElementsXS is built on ASP.NET webforms, I have learned a great deal about <b>HTML</b>, <b>CSS</b>, 
+                  <b>Javascript</b>, <b>Visual Basic</b>, and <b>C#</b>. Switching between the user interface and the back-end code keeps each day fresh. It 
+                  is very fulfilling to see the software development life-cycle from start to finish, here at Novotx. </p>
+                  <p class="time-worked">(April 2019 to Present)</p>
+              </div>
+            <div class="view">
+              <img class="card-images" src="/images/elementsXS.jpg" class="card-img-top" 
+                alt="photo">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>            
+          </div>
+        </div>
+        <div class="col-12 col-md-4" style="margin-bottom: 10px;">
+          <div class="card shadow work-card">
+            <div class="card-body">
+                <h4 class="card-title">Writing Center</h4>
+                <p class="card-text">As a writing tutor at Weber State University, it was my responsibility, 
+                  and pleasure, to help these students gain a better understanding of the writing process through 
+                  one-on-one teaching. This is a job that I thoroughly enjoyed because I was able to help others 
+                  learn new skills in research, organization, collaboration, and debate. Students entered tutoring 
+                  sessions with questions and concerns about their writing projects. However, by the end of a session, 
+                  the students’ questions are resolved, and they leave with a greater sense of what to do next in 
+                  their projects. Along with my colleagues, I issued in a new chapter for the Writing Center through 
+                  the implementation of <b>digital rhetoric</b> by teaching students to create editorials and documentaries 
+                  via Adobe produces such as <b>InDesign</b>, <b>PremierePro</b>, and <b>Spark</b>. During my time at the 
+                  Writing Center, I maintained a system using <b>Google Forms</b> and <b>Google Sheets</b> to track and 
+                  congratulate my coworkers for their efforts and achievements. </p>
+                  <p class="time-worked">(November 2017 to April 2019)</p>
+            </div>
+            <div class="view">
+              <img class="card-images" src="/images/writing_center_room.jpg" class="card-img-top" 
+                alt="photo">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>            
+          </div>
+        </div>
+        <div class="col-12 col-md-4" style="margin-bottom: 10px;">
+          <div class="card shadow work-card">
+            <div class="card-body">
+                <h4 class="card-title">Skills</h4>
+                <!-- <p class="card-text">For more information about my academic accomplishments, select this card.</p> -->
+                <div class="row">
+                  <div class="col-md-4 col-sm-12" >
+                    <h4 class="list-header">Programming Languages:</h4>
+                    <ol>
+                      <li>C++</li>
+                      <li>C#</li>
+                      <li>Java</li>
+                      <li>Javascript</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>MIPS</li>                      
+                    </ol>
+                  </div>
+                  <div class="col-md-4 col-sm-12" >
+                    <h4 class="list-header">Tech Skills:</h4>
+                    <ol>
+                      <li>Visual Studio</li>
+                      <li>IntelliJ</li>
+                      <li>Atom</li>
+                      <li>Adobe Photoshop & Lightroom</li>
+                      <li>Adobe InDesign & PremierePro</li>
+                      <li>Word Processors</li>
+                    </ol>
+                  </div>
+                  <div class="col-md-4 col-sm-12" >
+                    <h4 class="list-header">Qualities:</h4>
+                    <ol>
+                      <li>Self-Motived</li>
+                      <li>Team Worker</li>
+                      <li>Detail-Oriented</li>
+                      <li>Patient</li>
+                      <li>Teachable</li>
+                      <li>Honest</li>
+                      <li>Organized</li>
+                    </ol>
+                  </div>
+                  <p>*Fluent in Spanish, some proficiency in Portuguese</p>
+                </div>
+            </div>
+            <div class="view" style="margin-top: -30px;">
+              <img class="card-images" src="/images/temp_skills.png" class="card-img-top" 
+                alt="photo">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
 
-				<br>
+    <!-- Academic Experience -->
+    <a class="anchor" id="academic_xp_link"></a>
 
-				<h2>Goals:</h2>
-				<p>The first of my professional goals is to excel in my studies and
-				receive my Bachelor’s degree by 2020. I plan to work as a software
-				engineer for a renowned business, and to one day delve into the field
-				of AI software. I hope work alongside a strong team of software
-				developers to greatly improve the lives of those who use our software. </p>
-
-				<p>I also have recreational goals. The first of those is to publish a
-				book of my poetry. I also hope to better my guitar skills to start a
-				local band with a couple friends. Another goal I have is to continue
-				my mastery of the Spanish language, and to become proficient in
-				Portuguese. As part of this last goal, I hope to travel to several
-				countries in South America, Portugal, and Spain. </p>
-
-				<br>
-				<br>
-				<h2>Contact Me:</h2>
-				<br>
-				<div class="container">
-					<form id="Contact_Me_Form"
-						action="process.asp"
-						method="post">
-
-						<label for="First_Name">First Name</label>
-						<input type="text" id="First_Name" name="fName" placeholder="Your first name..." value="" onchange="addToBar()">
-
-						<label for="Last_Name">Last Name</label>
-						<input type="text" id="Last_Name" name="lName" placeholder="Your last name..." onchange="addToBar()">
-
-						<label for="Contact_Reason">Reason for contact</label>
-							<select id="Contact_Reason" name="contactReason" onchange="addToBar()">
-								<option value="Job">Job Offer</option>
-								<option value="Qestion">Business Question</option>
-								<option value="Suggestion">Make Suggestion</option>
-							</select>
-						<br>
-						<label for="Message">Message Content</label>
-						<textarea id="Message" name="message" placeholder="Write me..." style="height:200px" onchange="addToBar()"></textarea>
-
-						<div id="Progressbar1"></div>
-						<br>
-						<input id="Btn_Submit" type="submit" value="Submit"/>
-						<input id="Btn_Reset" type="reset" value="Clear" />
-
-					</form>
-				</div>
-			</div>
-
-			<div class="col-sm-3">
-				<br>
-				<br>
-				<img id="MyProfilePic1" src="images/JoshProfilePicEdit.jpg" alt="My profile picture" />
-			</div>
-
-		</div>
-
-    <!--dialog boxes -->
-    <div id="dialog1" title="Info:">
-	  	<p>This is a pictures of me in 2018.</p>
-	  </div>
-
-
-	<br>
-	<br>
-	<div class="row">
-		<footer class="col-sm-12" id="validations">
-			<p> Code Validations </p>
-
-			<!--HTML 5 validation-->
-			<a href="https://validator.w3.org/nu/?doc=https://www.joshua-abbott.me/index.html" target="blank">
-				<img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered" id="HTMLValidation" /> </a>
-
-			<!--CSS3 validation-->
-			<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
-			<img style="border:0;width:88px;height:31px"
-					src="http://jigsaw.w3.org/css-validator/images/vcss"
-					alt="Valid CSS!" id="css3Validation" />
-			</a>
-
-		</footer>
-	</div>
-	<br>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
   </body>
 
 </html>
