@@ -55,12 +55,12 @@
 
 /* Images and Icons */
     .social-icons img {        
-        max-height: 40px;
-        max-width: 40px;
+        max-height: 30px;
+        max-width: 30px;
         margin-left:20px;
     }
     #MySymbol{
-        max-width: 50px;
+        max-width: 30px;
     }
     #cardWeberSeal{
         max-width: 50%;
